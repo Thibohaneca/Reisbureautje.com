@@ -1,0 +1,126 @@
+body {
+  background-image: url("../Images/achtergrond.jpg");
+
+  font-family: sans-serif;
+  font-size: 16px;
+
+  text-align: justify;
+}
+
+#container {
+  /* De html-tag met id container mag een maximale breedte hebben van 1 200 px.*/
+
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: white;
+  overflow: hidden;
+}
+
+header img {
+  display: block;
+  margin: 0px auto;
+}
+
+nav {
+  margin-top: 10px;
+  border-bottom: grey solid;
+
+  overflow: hidden;
+}
+
+.item {
+  /* Elk item in de navigatie krijgt een puntgrootte van 21 px. */
+  font-size: 21px;
+
+  border: black 1px solid;
+  border-radius: 5px 5px 0px 0px;
+
+  float: left;
+  padding: 5px 15px 5px 15px;
+  margin: 0px 2px;
+}
+.item1 {
+  /* Elk item in de navigatie krijgt een puntgrootte van 21 px. */
+  font-size: 21px;
+
+  border: black 1px solid;
+  border-radius: 5px 5px 0px 0px;
+  padding: 5px 15px 5px 15px;
+  margin: 0px 2px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+nav a:hover{
+  background-color: black;
+  color: white;
+}
+main{
+float: right;
+width: 75%;
+}
+aside{
+  width: 25%;
+}
+aside h1, main h2{
+  text-align: center;
+  color: brown;
+  font-size: 28px;
+}
+aside p, aside table{
+  background-color: aqua;
+  text-align: center;
+  padding: 8px 5px 8px 5px;
+  margin: 5px;
+  display: block;
+}
+.lastminute{
+  padding: 15px 20px 5px 5px ;
+  border-bottom: grey 1px solid;
+  overflow: hidden;
+}
+.lastminute:hover{
+  background-color: rgb(245, 240, 255);
+  box-shadow: 0px 2px 5px 2px black;
+}
+.hotelnaam, .periode, .vertrek, .optie, .prijs{
+  float: left;
+}
+.hotelnaam, .periode{
+  width: 25%;
+}
+.vertrek, .optie{
+  width: 10%;
+}
+.prijs{
+  width: 20%;
+  text-align: right;
+  font-weight: bold;
+}
+#clear{
+  clear: both;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 6px;
+  /*regelafstand*/
+  line-height: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+@media screen and (min-width: 900px){
+  aside, main{
+    float: none;
+    width: 100%;
+  }
+}
+@media(max-width: 600px)
+{
+  .hotelnaam, .periode, .vertrek, .optie, .prijs
+  {
+    float: none;
+    width: 100%;
+  }
+}
